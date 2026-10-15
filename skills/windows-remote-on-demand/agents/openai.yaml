@@ -1,0 +1,3 @@
+interface:
+  display_name: "Windows Remote On Demand"
+  short_description: "通过 SSH 操作 Windows；桌面工具仅在需要时启用并在完成后关闭"

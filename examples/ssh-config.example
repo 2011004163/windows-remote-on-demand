@@ -1,0 +1,16 @@
+# Copy to ~/.ssh/windows_remote.conf and replace the two uppercase placeholders.
+Host windows-remote
+    HostName WINDOWS_TAILSCALE_IP
+    User WINDOWS_LOCAL_USERNAME
+    Port 22
+    IdentityFile ~/.ssh/windows_remote_ed25519
+    IdentitiesOnly yes
+    UserKnownHostsFile ~/.ssh/windows_remote_known_hosts
+    StrictHostKeyChecking yes
+    BatchMode yes
+    PasswordAuthentication no
+    KbdInteractiveAuthentication no
+    ConnectTimeout 10
+    ServerAliveInterval 15
+    ServerAliveCountMax 3
+    RequestTTY no
